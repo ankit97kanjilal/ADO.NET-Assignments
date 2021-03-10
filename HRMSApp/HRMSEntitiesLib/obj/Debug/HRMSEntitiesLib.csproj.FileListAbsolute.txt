@@ -1,0 +1,5 @@
+F:\ADO.NET\HRMSApp\HRMSEntitiesLib\bin\Debug\HRMSEntitiesLib.dll
+F:\ADO.NET\HRMSApp\HRMSEntitiesLib\bin\Debug\HRMSEntitiesLib.pdb
+F:\ADO.NET\HRMSApp\HRMSEntitiesLib\obj\Debug\HRMSEntitiesLib.csproj.CoreCompileInputs.cache
+F:\ADO.NET\HRMSApp\HRMSEntitiesLib\obj\Debug\HRMSEntitiesLib.dll
+F:\ADO.NET\HRMSApp\HRMSEntitiesLib\obj\Debug\HRMSEntitiesLib.pdb

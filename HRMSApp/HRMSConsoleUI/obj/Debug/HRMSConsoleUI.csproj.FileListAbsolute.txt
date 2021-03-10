@@ -1,0 +1,14 @@
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\bin\Debug\HRMSConsoleUI.exe.config
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\bin\Debug\HRMSConsoleUI.exe
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\bin\Debug\HRMSConsoleUI.pdb
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\bin\Debug\HRMSEntitiesLib.dll
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\bin\Debug\HRMSEntitiesLib.pdb
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\obj\Debug\HRMSConsoleUI.csprojAssemblyReference.cache
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\obj\Debug\HRMSConsoleUI.csproj.CoreCompileInputs.cache
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\obj\Debug\HRMSConsoleUI.csproj.CopyComplete
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\obj\Debug\HRMSConsoleUI.exe
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\obj\Debug\HRMSConsoleUI.pdb
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\bin\Debug\HRMSBusinessLib.dll
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\bin\Debug\HRMSDataAccessLib.dll
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\bin\Debug\HRMSBusinessLib.pdb
+F:\ADO.NET\HRMSApp\HRMSConsoleUI\bin\Debug\HRMSDataAccessLib.pdb
