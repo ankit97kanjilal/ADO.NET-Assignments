@@ -128,7 +128,7 @@ namespace BOOKSTOREApp
                     NoOfCopies = (int)sdr[4],
                     Price = (int)sdr[5]
                 };
-                //add the employee record to the collection
+                //add the book record to the collection
                 lstBooks.Add(book);
             }
             sdr.Close();
@@ -225,6 +225,58 @@ namespace BOOKSTOREApp
                 //close connection
                 con.Close();
             }
+        }
+        public Book SelectBookByBookName(string bookName)
+        {
+            List<Book> lstBooks = new List<Book>();
+            Book book;
+            SqlDataReader sdr = null;
+            try
+            {                
+                //TODO SELECT by BookName using AD0.NET
+                //configure sqlcommand for Select
+                cmd = new SqlCommand();
+                cmd.CommandText = "select bookid,bookname,authorname,publisher,[no of copies]," +
+                    "price from tbl_book where bookname like @bname";
+                //value of parameters supplied from emp
+                cmd.CommandType = CommandType.Text;
+
+                //supply parameter
+                cmd.Parameters.Clear();
+                cmd.Parameters.AddWithValue("@bname", "%"+bookName+"%");
+
+                cmd.Connection = con;
+                con.Open();
+                sdr = cmd.ExecuteReader();
+                if(!sdr.Read())
+                {
+                    throw new Exception("BookId does not exist.......");
+                }
+                while (sdr.Read())
+                {
+                    book = new Book
+                    {
+                        BookID = (int)sdr[0],
+                        BookName = sdr[1].ToString(),
+                        AuthorName = sdr[2].ToString(),
+                        Publisher = sdr[3].ToString(),
+                        NoOfCopies = (int)sdr[4],
+                        Price = (int)sdr[5]
+                    };
+                    //add the book record to the collection
+                    lstBooks.Add(book);
+                }
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            finally
+            {
+                sdr.Close();
+                con.Close();
+            }
+            return lstBooks;
         }
     }
 }

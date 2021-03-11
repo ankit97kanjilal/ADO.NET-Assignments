@@ -45,6 +45,7 @@ namespace BOOKSTOREApp
                 Console.WriteLine("3.Update book By Id");
                 Console.WriteLine("4.Display All books");
                 Console.WriteLine("5.Search book By Id");
+                Console.WriteLine("6.Search book By Book name");
                 Console.WriteLine("0.Exit");
                 Console.Write("Enter Choice: ");
                 choice = int.Parse(Console.ReadLine());
@@ -65,6 +66,9 @@ namespace BOOKSTOREApp
                         break;
                     case 5:
                         SearchBookById();
+                        break;
+                    case 6:
+                        SearchBookByBookName();
                         break;
                     case 0:
                         Console.WriteLine("Exiting......");
@@ -164,6 +168,23 @@ namespace BOOKSTOREApp
                     + book.Publisher + "\t\t" + book.NoOfCopies + "\t\t" + book.Price);
             }
             catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+        }
+        static void SearchBookByBookName()
+        {
+            try
+            {
+                Console.Write("Enter the book name to search : ");
+                string bookName = Console.ReadLine();
+                //search book using business layer
+                BusinessLayer bll = new BusinessLayer();
+                Book book = bll.SelectBookByBookName(bookName);
+                Console.WriteLine(book.BookID + "\t\t" + book.BookName + "\t\t" + book.AuthorName + "\t\t"
+                        + book.Publisher + "\t\t" + book.NoOfCopies + "\t\t" + book.Price);
+            }
+            catch(Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }

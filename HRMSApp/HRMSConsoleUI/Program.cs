@@ -151,7 +151,6 @@ namespace HRMSConsoleUI
                 Console.WriteLine(ex.Message);
             }
         }
-
         static void GetEmpSalByUsingSP()
         {
             try

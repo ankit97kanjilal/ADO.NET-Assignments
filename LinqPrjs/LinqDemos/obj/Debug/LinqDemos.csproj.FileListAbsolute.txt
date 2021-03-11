@@ -1,0 +1,7 @@
+F:\ADO.NET\LinqPrjs\LinqDemos\bin\Debug\LinqDemos.exe.config
+F:\ADO.NET\LinqPrjs\LinqDemos\bin\Debug\LinqDemos.exe
+F:\ADO.NET\LinqPrjs\LinqDemos\bin\Debug\LinqDemos.pdb
+F:\ADO.NET\LinqPrjs\LinqDemos\obj\Debug\LinqDemos.csprojAssemblyReference.cache
+F:\ADO.NET\LinqPrjs\LinqDemos\obj\Debug\LinqDemos.csproj.CoreCompileInputs.cache
+F:\ADO.NET\LinqPrjs\LinqDemos\obj\Debug\LinqDemos.exe
+F:\ADO.NET\LinqPrjs\LinqDemos\obj\Debug\LinqDemos.pdb

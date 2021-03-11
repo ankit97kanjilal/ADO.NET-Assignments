@@ -21,10 +21,18 @@ namespace BOOKSTOREApp
             AdoConnected dal = new AdoConnected();
             dal.InsertBook(book);
         }
-        public void DeleteBook(int bookID)
+
+        /*public void DeleteBook(int bookID)
         {
             AdoConnected dal = new AdoConnected();
             dal.DeleteBook(bookID);
+        }*/
+        
+        //for AdoDisconnected
+        public void DeleteBook(string bookcode)
+        {
+            AdoDisconnected dal = new AdoDisconnected();
+            dal.DeleteBook(bookcode);
         }
         public void UpdateBook(Book book)
         {
@@ -36,6 +44,12 @@ namespace BOOKSTOREApp
         {
             AdoConnected dal = new AdoConnected();
             Book book = dal.SelectBookById(bookID);
+            return book;
+        }
+        public Book SelectBookByBookName(string bookName)
+        {
+            AdoConnected dal = new AdoConnected();
+            Book book = dal.SelectBookByBookName(bookName);
             return book;
         }
     }
