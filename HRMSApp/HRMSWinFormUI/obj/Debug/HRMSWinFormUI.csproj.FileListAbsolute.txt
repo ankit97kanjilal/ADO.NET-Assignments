@@ -1,0 +1,17 @@
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\bin\Debug\HRMSWinFormUI.exe.config
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\bin\Debug\HRMSWinFormUI.exe
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\bin\Debug\HRMSWinFormUI.pdb
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\bin\Debug\HRMSBusinessLib.dll
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\bin\Debug\HRMSEntitiesLib.dll
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\bin\Debug\HRMSDataAccessLib.dll
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\bin\Debug\HRMSBusinessLib.pdb
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\bin\Debug\HRMSEntitiesLib.pdb
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\bin\Debug\HRMSDataAccessLib.pdb
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\obj\Debug\HRMSWinFormUI.csprojAssemblyReference.cache
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\obj\Debug\HRMSWinFormUI.Form1.resources
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\obj\Debug\HRMSWinFormUI.Properties.Resources.resources
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\obj\Debug\HRMSWinFormUI.csproj.GenerateResource.cache
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\obj\Debug\HRMSWinFormUI.csproj.CoreCompileInputs.cache
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\obj\Debug\HRMSWinFormUI.csproj.CopyComplete
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\obj\Debug\HRMSWinFormUI.exe
+F:\ADO.NET\HRMSApp\HRMSWinFormUI\obj\Debug\HRMSWinFormUI.pdb
