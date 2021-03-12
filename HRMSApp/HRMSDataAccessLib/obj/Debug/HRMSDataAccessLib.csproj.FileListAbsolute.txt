@@ -1,9 +1,0 @@
-F:\ADO.NET\HRMSApp\HRMSDataAccessLib\bin\Debug\HRMSDataAccessLib.dll
-F:\ADO.NET\HRMSApp\HRMSDataAccessLib\bin\Debug\HRMSDataAccessLib.pdb
-F:\ADO.NET\HRMSApp\HRMSDataAccessLib\bin\Debug\HRMSEntitiesLib.dll
-F:\ADO.NET\HRMSApp\HRMSDataAccessLib\bin\Debug\HRMSEntitiesLib.pdb
-F:\ADO.NET\HRMSApp\HRMSDataAccessLib\obj\Debug\HRMSDataAccessLib.csprojAssemblyReference.cache
-F:\ADO.NET\HRMSApp\HRMSDataAccessLib\obj\Debug\HRMSDataAccessLib.csproj.CoreCompileInputs.cache
-F:\ADO.NET\HRMSApp\HRMSDataAccessLib\obj\Debug\HRMSDataAccessLib.csproj.CopyComplete
-F:\ADO.NET\HRMSApp\HRMSDataAccessLib\obj\Debug\HRMSDataAccessLib.dll
-F:\ADO.NET\HRMSApp\HRMSDataAccessLib\obj\Debug\HRMSDataAccessLib.pdb
