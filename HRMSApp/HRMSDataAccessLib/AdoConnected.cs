@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 using HRMSEntitiesLib;  //for Entities Layer
 using System.Data.SqlClient; //Sql Server Provider
 using System.Data;
+using System.Configuration;
 
 namespace HRMSDataAccessLib
 {
+    //Runs Successfully... Works fine in xml connectionStrings
     public class AdoConnected : IDataAccess   //don't give this name in real time project
     {
         SqlConnection con;
@@ -17,10 +19,11 @@ namespace HRMSDataAccessLib
         {
             //create and configure the connection object
             con = new SqlConnection();
-            con.ConnectionString = @"Data Source=DESKTOP-SDB1BH2\SQLEXPRESS;Initial Catalog=HRMSDB;Integrated Security=True";
-
+            string conStr = ConfigurationManager.ConnectionStrings["sqlconstr"].ConnectionString;
+            con.ConnectionString = conStr;
+            //con.ConnectionString = @"Data Source=DESKTOP-SDB1BH2\SQLEXPRESS;Initial Catalog=HRMSDB;Integrated Security=True";
         }
-        public void DeleteEmployee(int ecode)
+        public void DeleteEmpById(int ecode)
         {
             //TODO DELETE using AD0.NET
             //configure SqlCommand for DELETE
@@ -284,6 +287,45 @@ namespace HRMSDataAccessLib
                 con.Close();
             }
             return salary;
+        }        
+        public void DoTransaction()
+        {
+            //Transactions:-
+            //set of statements which should execute logically as a one unit and as a whole(either all or none). 
+            //If any statement fails, everything should be rolled back to previous consistent state of database
+            SqlTransaction T = null;
+            try
+            {
+                SqlCommand cmd1 = new SqlCommand();
+                cmd1.CommandText = "update tbl_employee set salary = salary + 1000 where ecode = 101";
+                cmd1.Connection = con;
+
+                SqlCommand cmd2 = new SqlCommand();
+                cmd2.CommandText = "delete from tbl_employee where ecode=105";
+                cmd2.Connection = con;
+
+                con.Open();
+                //initiate a Transaction
+                T = con.BeginTransaction();
+                //attach the logically related command with the transaction
+                cmd1.Transaction = T;
+                cmd2.Transaction = T;
+
+                cmd1.ExecuteNonQuery();
+                cmd2.ExecuteNonQuery();
+                //commit
+                T.Commit();
+            }
+            catch (SqlException ex)
+            {
+                //rollback 
+                T.Rollback();
+                throw ex;
+            }
+            finally
+            {
+                con.Close();
+            }
         }
     }
 }

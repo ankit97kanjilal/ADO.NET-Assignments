@@ -30,7 +30,7 @@ namespace HRMSBusinessLib
         {
             //AdoConnected dal = new AdoConnected();
             AdoDisconnected dal = new AdoDisconnected();
-            dal.DeleteEmployee(ecode);
+            dal.DeleteEmpById(ecode);
         }
         public void UpdateEmployee(Employee emp)
         {
@@ -58,6 +58,11 @@ namespace HRMSBusinessLib
             AdoConnected dal = new AdoConnected();
             salary = dal.GetEmpSalUsingSP(ecode);
             return salary;
+        }
+        public void DoTransaction()
+        {
+            AdoConnected dal = new AdoConnected();
+            dal.DoTransaction();
         }
     }
 }

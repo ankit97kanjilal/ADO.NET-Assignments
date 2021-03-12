@@ -118,5 +118,19 @@ namespace HRMSWinFormUI
             List<Employee> lstEmps = bll.GetAllEmps();
             dgvEmps.DataSource = lstEmps;
         }
+
+        private void DoTransaction_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                BusinessLayer bll = new BusinessLayer();
+                bll.DoTransaction();
+                MessageBox.Show("Transaction success");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }

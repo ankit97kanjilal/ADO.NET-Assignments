@@ -43,6 +43,7 @@ namespace HRMSWinFormUI
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnFindEmp = new System.Windows.Forms.Button();
             this.dgvEmps = new System.Windows.Forms.DataGridView();
+            this.DoTransaction = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvEmps)).BeginInit();
             this.SuspendLayout();
             // 
@@ -173,11 +174,22 @@ namespace HRMSWinFormUI
             this.dgvEmps.Size = new System.Drawing.Size(446, 307);
             this.dgvEmps.TabIndex = 13;
             // 
+            // DoTransaction
+            // 
+            this.DoTransaction.Location = new System.Drawing.Point(784, 13);
+            this.DoTransaction.Name = "DoTransaction";
+            this.DoTransaction.Size = new System.Drawing.Size(167, 31);
+            this.DoTransaction.TabIndex = 14;
+            this.DoTransaction.Text = "Do Transaction";
+            this.DoTransaction.UseVisualStyleBackColor = true;
+            this.DoTransaction.Click += new System.EventHandler(this.DoTransaction_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(981, 490);
+            this.Controls.Add(this.DoTransaction);
             this.Controls.Add(this.dgvEmps);
             this.Controls.Add(this.btnFindEmp);
             this.Controls.Add(this.btnUpdate);
@@ -217,6 +229,7 @@ namespace HRMSWinFormUI
         private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnFindEmp;
         private System.Windows.Forms.DataGridView dgvEmps;
+        private System.Windows.Forms.Button DoTransaction;
     }
 }
 

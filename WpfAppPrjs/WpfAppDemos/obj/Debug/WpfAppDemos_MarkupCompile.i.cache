@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-F:\ADO.NET\WpfAppPrjs\WpfAppDemos\obj\Debug\
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\
 WpfAppDemos
 none
 false
 DEBUG;TRACE
-F:\ADO.NET\WpfAppPrjs\WpfAppDemos\App.xaml
-31110011600
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\App.xaml
+5861496083
 
-8-267291474
-13-1505183044
-MainWindow.xaml;StackPanelDemo.xaml;WrapPanelDemo.xaml;
+10726079786
+15-1808294775
+DockPanelDemo.xaml;EmployeeWindowDemo.xaml;MainWindow.xaml;StackPanelDemo.xaml;WrapPanelDemo.xaml;
 
 True
 

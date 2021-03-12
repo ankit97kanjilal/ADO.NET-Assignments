@@ -9,3 +9,14 @@ F:\ADO.NET\HRMSApp\HRMSBusinessLib\obj\Debug\HRMSBusinessLib.csproj.CoreCompileI
 F:\ADO.NET\HRMSApp\HRMSBusinessLib\obj\Debug\HRMSBusinessLib.csproj.CopyComplete
 F:\ADO.NET\HRMSApp\HRMSBusinessLib\obj\Debug\HRMSBusinessLib.dll
 F:\ADO.NET\HRMSApp\HRMSBusinessLib\obj\Debug\HRMSBusinessLib.pdb
+F:\ADO.NET_Training\HRMSApp\HRMSBusinessLib\bin\Debug\HRMSBusinessLib.dll
+F:\ADO.NET_Training\HRMSApp\HRMSBusinessLib\bin\Debug\HRMSBusinessLib.pdb
+F:\ADO.NET_Training\HRMSApp\HRMSBusinessLib\bin\Debug\HRMSDataAccessLib.dll
+F:\ADO.NET_Training\HRMSApp\HRMSBusinessLib\bin\Debug\HRMSEntitiesLib.dll
+F:\ADO.NET_Training\HRMSApp\HRMSBusinessLib\bin\Debug\HRMSDataAccessLib.pdb
+F:\ADO.NET_Training\HRMSApp\HRMSBusinessLib\bin\Debug\HRMSEntitiesLib.pdb
+F:\ADO.NET_Training\HRMSApp\HRMSBusinessLib\obj\Debug\HRMSBusinessLib.csprojAssemblyReference.cache
+F:\ADO.NET_Training\HRMSApp\HRMSBusinessLib\obj\Debug\HRMSBusinessLib.csproj.CoreCompileInputs.cache
+F:\ADO.NET_Training\HRMSApp\HRMSBusinessLib\obj\Debug\HRMSBusinessLib.csproj.CopyComplete
+F:\ADO.NET_Training\HRMSApp\HRMSBusinessLib\obj\Debug\HRMSBusinessLib.dll
+F:\ADO.NET_Training\HRMSApp\HRMSBusinessLib\obj\Debug\HRMSBusinessLib.pdb

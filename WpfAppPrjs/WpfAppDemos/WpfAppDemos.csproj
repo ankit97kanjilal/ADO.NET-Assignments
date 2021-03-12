@@ -35,6 +35,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HRMSBusinessLib">
+      <HintPath>..\..\HRMSApp\HRMSBusinessLib\bin\Debug\HRMSBusinessLib.dll</HintPath>
+    </Reference>
+    <Reference Include="HRMSEntitiesLib">
+      <HintPath>..\..\HRMSApp\HRMSEntitiesLib\bin\Debug\HRMSEntitiesLib.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
@@ -55,12 +61,26 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DockPanelDemo.xaml.cs">
+      <DependentUpon>DockPanelDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="EmployeeWindowDemo.xaml.cs">
+      <DependentUpon>EmployeeWindowDemo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StackPanelDemo.xaml.cs">
       <DependentUpon>StackPanelDemo.xaml</DependentUpon>
     </Compile>
     <Compile Include="WrapPanelDemo.xaml.cs">
       <DependentUpon>WrapPanelDemo.xaml</DependentUpon>
     </Compile>
+    <Page Include="DockPanelDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="EmployeeWindowDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>

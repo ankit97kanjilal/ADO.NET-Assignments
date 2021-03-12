@@ -13,7 +13,7 @@ namespace HRMSDataAccessLib
         List<Employee> SelectAllEmps();
         Employee SelectEmpById(int ecode);
         void InsertEmployee(Employee emp);
-        void DeleteEmployee(int ecode);
+        void DeleteEmpById(int ecode);
         void UpdateEmpById(Employee emp);
     }
 }
