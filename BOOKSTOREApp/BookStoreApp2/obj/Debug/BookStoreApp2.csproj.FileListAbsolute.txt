@@ -1,0 +1,7 @@
+F:\ADO.NET\BOOKSTOREApp\BookStoreApp2\bin\Debug\BookStoreApp2.exe.config
+F:\ADO.NET\BOOKSTOREApp\BookStoreApp2\bin\Debug\BookStoreApp2.exe
+F:\ADO.NET\BOOKSTOREApp\BookStoreApp2\bin\Debug\BookStoreApp2.pdb
+F:\ADO.NET\BOOKSTOREApp\BookStoreApp2\obj\Debug\BookStoreApp2.csprojAssemblyReference.cache
+F:\ADO.NET\BOOKSTOREApp\BookStoreApp2\obj\Debug\BookStoreApp2.csproj.CoreCompileInputs.cache
+F:\ADO.NET\BOOKSTOREApp\BookStoreApp2\obj\Debug\BookStoreApp2.exe
+F:\ADO.NET\BOOKSTOREApp\BookStoreApp2\obj\Debug\BookStoreApp2.pdb
