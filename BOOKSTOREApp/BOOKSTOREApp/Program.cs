@@ -176,13 +176,17 @@ namespace BOOKSTOREApp
         {
             try
             {
+                List<Book> lstBooks = new List<Book>();
                 Console.Write("Enter the book name to search : ");
                 string bookName = Console.ReadLine();
                 //search book using business layer
                 BusinessLayer bll = new BusinessLayer();
-                Book book = bll.SelectBookByBookName(bookName);
-                Console.WriteLine(book.BookID + "\t\t" + book.BookName + "\t\t" + book.AuthorName + "\t\t"
+                lstBooks = bll.SelectBookByBookName(bookName);
+                foreach (Book book in lstBooks)
+                {
+                    Console.WriteLine(book.BookID + "\t\t" + book.BookName + "\t\t" + book.AuthorName + "\t\t"
                         + book.Publisher + "\t\t" + book.NoOfCopies + "\t\t" + book.Price);
+                }
             }
             catch(Exception ex)
             {

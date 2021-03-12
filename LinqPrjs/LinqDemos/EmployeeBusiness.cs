@@ -21,5 +21,15 @@ namespace LinqDemos
             };
             return lstEmps;
         }
+        public static List<Department> GetAllDepts()
+        {
+            var lstDepts = new List<Department>
+            {
+                new Department{Deptid=201,Dname="Finance",Dhead=103},
+                new Department{Deptid=202,Dname="Account",Dhead=101},
+                new Department{Deptid=203,Dname="Sales",Dhead=105}
+            };
+            return lstDepts;
+        }
     }
 }

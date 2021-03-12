@@ -77,7 +77,7 @@ namespace BookStoreApp2
             try
             {
                 BusinessLayer bll = new BusinessLayer();
-                Console.Write("Enter the bookID to delete the book detail : ");
+                Console.Write("Enter the bookCode to delete the book detail : ");
                 string bookCode = Console.ReadLine();
                 bll.DeleteBook(bookCode);
                 Console.WriteLine("Record deleted successfully....");
@@ -92,7 +92,7 @@ namespace BookStoreApp2
             try
             {
                 Book book = new Book();
-                Console.Write("Enter the book ID for update : ");
+                Console.Write("Enter the book code for update : ");
                 book.BookCode = Console.ReadLine();
                 Console.Write("Enter the book name for update : ");
                 book.BookName = Console.ReadLine();
@@ -128,7 +128,7 @@ namespace BookStoreApp2
             {
                 string bookCode;
                 Book book = null;
-                Console.Write("Enter bookID for search : ");
+                Console.Write("Enter bookCode for search : ");
                 bookCode = Console.ReadLine();
                 //search book using business layer
                 BusinessLayer bll = new BusinessLayer();

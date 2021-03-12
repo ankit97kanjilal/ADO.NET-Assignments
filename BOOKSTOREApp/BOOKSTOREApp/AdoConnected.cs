@@ -226,35 +226,30 @@ namespace BOOKSTOREApp
                 con.Close();
             }
         }
-        public Book SelectBookByBookName(string bookName)
+        public List<Book> SelectBookByBookName(string bookName)
         {
-            List<Book> lstBooks = new List<Book>();
-            Book book;
+            List<Book> lstBooks = new List<Book>();            
             SqlDataReader sdr = null;
-            try
-            {                
-                //TODO SELECT by BookName using AD0.NET
-                //configure sqlcommand for Select
-                cmd = new SqlCommand();
-                cmd.CommandText = "select bookid,bookname,authorname,publisher,[no of copies]," +
-                    "price from tbl_book where bookname like @bname";
-                //value of parameters supplied from emp
-                cmd.CommandType = CommandType.Text;
+            //TODO SELECT by BookName using AD0.NET
+            //configure sqlcommand for Select
+            cmd = new SqlCommand();
+            cmd.CommandText = "select bookid,bookname,authorname,publisher,[no of copies]," +
+                "price from tbl_book where bookname like @bname";
+            //value of parameters supplied from emp
+            cmd.CommandType = CommandType.Text;
 
-                //supply parameter
-                cmd.Parameters.Clear();
-                cmd.Parameters.AddWithValue("@bname", "%"+bookName+"%");
+            //supply parameter
+            cmd.Parameters.Clear();
+            cmd.Parameters.AddWithValue("@bname", "%" + bookName + "%");
 
-                cmd.Connection = con;
-                con.Open();
-                sdr = cmd.ExecuteReader();
-                if(!sdr.Read())
-                {
-                    throw new Exception("BookId does not exist.......");
-                }
+            cmd.Connection = con;
+            con.Open();
+            sdr = cmd.ExecuteReader();
+            if (sdr != null)
+            {
                 while (sdr.Read())
                 {
-                    book = new Book
+                    Book book = new Book
                     {
                         BookID = (int)sdr[0],
                         BookName = sdr[1].ToString(),
@@ -267,15 +262,12 @@ namespace BOOKSTOREApp
                     lstBooks.Add(book);
                 }
             }
-            catch (Exception ex)
+            else
             {
-                throw ex;
+                throw new Exception("Not matched anything...");
             }
-            finally
-            {
-                sdr.Close();
-                con.Close();
-            }
+            sdr.Close();
+            con.Close();
             return lstBooks;
         }
     }
