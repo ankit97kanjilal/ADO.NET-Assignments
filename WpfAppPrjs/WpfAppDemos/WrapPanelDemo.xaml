@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppDemos"
         mc:Ignorable="d"
-        Title="WrapPanelDemo" Height="450" Width="800">
+        Title="WrapPanelDemo" Height="419.731" Width="729.372">
     <WrapPanel Orientation="Horizontal">
         <Button Content="button1" Width="200" Height="50" Margin="20"/>
         <Button Content="button2" Width="200" Height="50" Margin="20"/>
