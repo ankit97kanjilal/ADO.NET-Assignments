@@ -1,0 +1,45 @@
+﻿<Window x:Class="WpfAppDemos.DataTemplateDemo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppDemos"
+        mc:Ignorable="d"
+        Title="DataTemplateDemo" Height="450" Width="800" Loaded="Window_Loaded">
+
+    <Window.Resources>
+        <!--DataTemplate Resource-->
+        <DataTemplate x:Key="empTmplt">
+            <StackPanel Orientation="Horizontal">
+                <!--<StackPanel Orientation="Horizontal">-->
+                    <!--<Label Content="Ecode :"/>-->
+                    <!--textblock is read only.. TextBox is editable-->
+                    <TextBlock Text="{Binding Path=Ecode}"/>
+                    <TextBlock Text="       "/>
+                <!--</StackPanel>-->
+                <!--<StackPanel Orientation="Horizontal">-->
+                    <!--<Label Content="Ename :"/>-->
+                    <TextBlock Text="{Binding Path=Ename}"/>
+                    <TextBlock Text="       "/>
+                <!--</StackPanel>-->
+                <!--<StackPanel Orientation="Horizontal">-->
+                    <!--<Label Content="Salary :"/>-->
+                    <TextBlock Text="{Binding Path=Salary}"/>
+                    <TextBlock Text="       "/>
+                <!--</StackPanel>-->
+                <!--<StackPanel Orientation="Horizontal">-->
+                    <!--<Label Content="Deptid :"/>-->
+                    <TextBlock Text="{Binding Path=Deptid}"/>
+                    <TextBlock Text="       "/>
+                <!--</StackPanel>-->
+            </StackPanel>
+            <!--just simple StackPanel view-->
+        </DataTemplate>
+    </Window.Resources>
+    
+    <Grid>
+        <!--listview ItemsSource="" ItemTemplate="" this ItemSource will be done by C# code -->
+        <!--Template are specified in XAML and source is specified in C#-->
+        <ListView Name="lvEmps" ItemTemplate="{Binding Source={StaticResource empTmplt}}"/>
+    </Grid>
+</Window>

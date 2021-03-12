@@ -1,0 +1,69 @@
+POrtion of LINQ
+========================================
+-First() --> returns first item from the result----List<Employee>   gives exception if no items in the result
+-FirstOrDefault()-->returns first item from the result,does not give exception if no items in the result, it gives default value based on the data-type
+
+-Single()-----> single record out of the result, should be used to convert the result into one record and if there are multiple items in the
+result it will throw exception.
+
+-SingleOrDefault()
+
+
+WPF
+==========================================================
+WPF: Windows Presentation Foundation : used for developing Windows Application using declarative tags.
+It is a vector-based graphical user-interface.
+Winforms -----screen resolution which defines pixels on the screen for a point 
+
+design app----> resolution of screen (r1)----------> different resolution (r2) 
+		1000			500
+
+--it is designed using tags based ---XAML-----> Xml Application Markup Language .cs .xaml
+--better separation of UI and Logic of application
+--Extensively supports 3D graphics and animations compared to winform
+--Extensive Databinding features in WPF using xaml syntaxes.
+--resources and styles defining and sharing can be done in WPF
+
+
+WPF Layouts: used to put and arrange controls in WPF window form
+1) Grid Layout:- arrange elements in rows and columns
+2) Stackpanel:- arrange elements either horizontally or vertically
+
+
+Ecode : _______
+Ename:_______
+
+
+==============Data binding in WPF====================
+We can bind following objects:
+1) a variable
+2) an object
+3) a collection
+4) bind one WPF element with another element
+
+Modes of binding
+1) one-way
+2) two-way
+3) oneway to source
+4) oneway to target
+5) onetime
+
+insert----DB
+lstEmps=GetAllEmps
+dgv.DataSource=lstEmps;//it was not happening automatically
+so data binding is not happening here....
+
+if dgv ---- binded with lstEmps then automatically DB will be updated
+====================================================
+
+WPF Resources:- These are the object which cab shared across elements, pages as a resources e.g. color, brush, variables, templates .
+Every resource is created and referred using a resource id.
+Resources can be shared at different scope levels:
+
+1) Application level resources: accessible in any of the xaml pages. (Defined in App.xaml)
+2) Page level resources:- accessible in any of the elements of the page in which resource is defined, not across pages.(Defined inside the window tag of the page.)
+3) Element level reources:- This is limited to the element and its child elements
+
+url: uniform resource location
+uri: uniform resource identifier
+urn: uniform resource name

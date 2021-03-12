@@ -61,8 +61,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DataTemplateDemo.xaml.cs">
+      <DependentUpon>DataTemplateDemo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="DockPanelDemo.xaml.cs">
       <DependentUpon>DockPanelDemo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElementBinding.xaml.cs">
+      <DependentUpon>ElementBinding.xaml</DependentUpon>
     </Compile>
     <Compile Include="EmployeeWindowDemo.xaml.cs">
       <DependentUpon>EmployeeWindowDemo.xaml</DependentUpon>
@@ -70,10 +76,21 @@
     <Compile Include="StackPanelDemo.xaml.cs">
       <DependentUpon>StackPanelDemo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WpfDataBinding.xaml.cs">
+      <DependentUpon>WpfDataBinding.xaml</DependentUpon>
+    </Compile>
     <Compile Include="WrapPanelDemo.xaml.cs">
       <DependentUpon>WrapPanelDemo.xaml</DependentUpon>
     </Compile>
+    <Page Include="DataTemplateDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="DockPanelDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ElementBinding.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -94,6 +111,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="StackPanelDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfDataBinding.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -127,6 +148,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pic1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

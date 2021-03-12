@@ -1,0 +1,34 @@
+﻿<Window x:Class="WpfAppDemos.WpfDataBinding"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppDemos"
+        xmlns:System="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="WpfDataBinding" Height="450" Width="800">
+
+    <Window.Resources>
+        <!--string,Int32 not available by default-->
+        <!--how to get this... These are available in system namesapce-->
+        <!--System need to be imported-->
+        <!--<System:Int32 x:Key="data"></System:Int32>-->
+        
+        <System:String x:Key="data">Hello Ankit</System:String>
+        <!--we can refer this variable by this key x-->
+        <!--For now it needs to be string... Otherwise for integer we need to do some programminng-->
+        <!--But for now use string for binding data in textbox-->
+
+        <SolidColorBrush x:Key="yellowBrush" Color="Yellow"/>
+        <!--this yellow brush is available only in this page-->
+    </Window.Resources>
+    <StackPanel>
+        <!--<Label Foreground="{StaticResource redBrush}" Content="Data :" FontSize="35" Background="{StaticResource yellowBrush}"/>-->
+        
+        <!--now how to set the background and forground color at runtime.....-->
+        <Label Name="lblData" Content="Data :" FontSize="35" />
+        <!--still redBrush is coming-->
+        <TextBox Text="{StaticResource data}" FontSize="30" Height="50" Margin="19,0,196,0" />
+        <Button Name="btnSetBkColor" Content="Button" Margin="299,0,278,0" Height="44" Click="btnSetBkColor_Click"/>
+    </StackPanel>
+</Window>

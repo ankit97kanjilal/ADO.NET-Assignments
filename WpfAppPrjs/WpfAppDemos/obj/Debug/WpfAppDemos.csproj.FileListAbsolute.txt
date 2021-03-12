@@ -47,3 +47,10 @@ F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\bin\Debug\HRMSBusinessLib.pdb
 F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\bin\Debug\HRMSEntitiesLib.pdb
 F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\bin\Debug\HRMSDataAccessLib.pdb
 F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\WpfAppDemos.csproj.CopyComplete
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\WpfDataBinding.g.cs
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\App.baml
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\WpfDataBinding.baml
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\ElementBinding.g.cs
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\ElementBinding.baml
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\DataTemplateDemo.g.cs
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\DataTemplateDemo.baml

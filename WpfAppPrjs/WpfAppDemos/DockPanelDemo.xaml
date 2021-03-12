@@ -5,10 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppDemos"
         mc:Ignorable="d"
-        Title="DockPanelDemo" Height="498.936" Width="971.277">
+        Title="DockPanelDemo" Height="498.936" Width="971.277">    
+        <!--Here we can define Page level resources.. Below any element tag can refer to this resource-->
+        <!--So if we define here the resource.. All the DockPanel element can refer to this-->
     <DockPanel>
-        <Label DockPanel.Dock="Top" Content="This is Top area" Background="Yellow" Height="31"/>
-        <Label DockPanel.Dock="Bottom" Content="This is bottom area" Background="Red" Height="41" RenderTransformOrigin="0.502,0.527">
+        <!--Sequence matter in Xaml-->
+        <Label DockPanel.Dock="Top" FontSize="15" Content="This is Top area" Background="YellowGreen" Height="39"/>
+        <Label DockPanel.Dock="Bottom" FontSize="15" Content="This is bottom area" Background="Red" Height="41" RenderTransformOrigin="0.502,0.527">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,10 +20,13 @@
                     <TranslateTransform Y="-2.43"/>
                 </TransformGroup>
             </Label.RenderTransform>
-        </Label>
-        <Label DockPanel.Dock="Left" Content="This is Left area" Background="Blue" Margin="0,0,0,5" Width="153"/>
+        </Label>        
+        <Label DockPanel.Dock="Left" FontSize="15" Content="This is Left area" Background="BlueViolet" Margin="0,0,0,5" Width="153"/>
         <!--<Label DockPanel.Dock="Right" Content="This is Left area" Background="SkyBlue"/>-->
-        <StackPanel Width="790" Margin="0,0,0,-12">
+
+        <!--but if we here define the resource all the dockpanel element can't refer to this-->
+        <!--only the below elements can refer to this-->
+        <StackPanel Width="808" Margin="0,0,0,5">
             <Label Content="Employee Details Form(HRMS)" Height="53" Margin="146,10,122,0" VerticalAlignment="Top" Width="524" FontFamily="Times New Roman" FontWeight="Bold" FontSize="36" HorizontalAlignment="Center"/>
             <Grid Height="326" Margin="47,0,30,0">
                 <Grid.RowDefinitions>

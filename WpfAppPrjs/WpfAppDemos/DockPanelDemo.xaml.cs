@@ -54,17 +54,56 @@ namespace WpfAppDemos
 
         private void btnDelete_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Record Inserted");
+            try
+            {
+                BusinessLayer bll = new BusinessLayer();
+                int ecode = int.Parse(txtEcode.Text);
+                bll.DeleteEmployee(ecode);
+                MessageBox.Show("Record Deleted");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnUpdate_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Record Inserted");
+            try
+            {
+                BusinessLayer bll = new BusinessLayer();
+                Employee emp = new Employee
+                {
+                    Ecode = int.Parse(txtEcode.Text),
+                    Ename = txtEname.Text,
+                    Salary = int.Parse(txtSalary.Text),
+                    Deptid = int.Parse(txtDeptid.Text)
+                };
+                bll.UpdateEmployee(emp);
+                MessageBox.Show("Record Updated");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void btnSelect_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Record Inserted");
+            try
+            {
+                int ecode = int.Parse(txtEcode.Text);
+                BusinessLayer bll = new BusinessLayer();
+                Employee emp = bll.SelectEmpById(ecode);
+                txtEname.Text = emp.Ename;
+                txtSalary.Text = emp.Salary.ToString();
+                txtDeptid.Text = emp.Deptid.ToString();
+                MessageBox.Show("Record Found");
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }
