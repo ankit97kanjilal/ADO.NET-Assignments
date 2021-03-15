@@ -43,6 +43,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Speech" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -61,6 +62,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MusicEntity.cs" />
     <Compile Include="DataTemplateDemo.xaml.cs">
       <DependentUpon>DataTemplateDemo.xaml</DependentUpon>
     </Compile>
@@ -73,11 +75,20 @@
     <Compile Include="EmployeeWindowDemo.xaml.cs">
       <DependentUpon>EmployeeWindowDemo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MediaElement.xaml.cs">
+      <DependentUpon>MediaElement.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SpeechRecognitionDemo.xaml.cs">
+      <DependentUpon>SpeechRecognitionDemo.xaml</DependentUpon>
+    </Compile>
     <Compile Include="StackPanelDemo.xaml.cs">
       <DependentUpon>StackPanelDemo.xaml</DependentUpon>
     </Compile>
     <Compile Include="WpfDataBinding.xaml.cs">
       <DependentUpon>WpfDataBinding.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WpfMusicLibraryDataBinding.xaml.cs">
+      <DependentUpon>WpfMusicLibraryDataBinding.xaml</DependentUpon>
     </Compile>
     <Compile Include="WrapPanelDemo.xaml.cs">
       <DependentUpon>WrapPanelDemo.xaml</DependentUpon>
@@ -110,11 +121,23 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MediaElement.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SpeechRecognitionDemo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StackPanelDemo.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="WpfDataBinding.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WpfMusicLibraryDataBinding.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -151,6 +174,9 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="pic1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vedio1.mp4" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

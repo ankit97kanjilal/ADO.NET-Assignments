@@ -54,3 +54,12 @@ F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\ElementBinding.g.cs
 F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\ElementBinding.baml
 F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\DataTemplateDemo.g.cs
 F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\DataTemplateDemo.baml
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\MediaElement.g.cs
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\WpfAppDemos_Content.g.cs
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\MediaElement.baml
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\SpeechRecognitionDemo.g.cs
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\SpeechRecognitionDemo.baml
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\WpfMusicLibraryDataBinding.g.cs
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\WpfMusicLibraryDataBinding.baml
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\WPFMusic.g.cs
+F:\ADO.NET_Training\WpfAppPrjs\WpfAppDemos\obj\Debug\WPFMusic.baml

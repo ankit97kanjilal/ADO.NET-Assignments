@@ -5,12 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfAppDemos"
         mc:Ignorable="d"
-        Title="DockPanelDemo" Height="498.936" Width="971.277">    
+        Title="DockPanelDemo" Height="498.936" Width="971.277" Loaded="Window_Loaded">    
         <!--Here we can define Page level resources.. Below any element tag can refer to this resource-->
         <!--So if we define here the resource.. All the DockPanel element can refer to this-->
     <DockPanel>
         <!--Sequence matter in Xaml-->
-        <Label DockPanel.Dock="Top" FontSize="15" Content="This is Top area" Background="YellowGreen" Height="39"/>
+        <Label Name="lblMsg" DockPanel.Dock="Top" FontSize="15" Content="This is Top area" Background="YellowGreen" Height="39"/>
         <Label DockPanel.Dock="Bottom" FontSize="15" Content="This is bottom area" Background="Red" Height="41" RenderTransformOrigin="0.502,0.527">
             <Label.RenderTransform>
                 <TransformGroup>

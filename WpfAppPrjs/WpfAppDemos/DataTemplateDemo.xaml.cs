@@ -32,7 +32,10 @@ namespace WpfAppDemos
             var lstEmps = bll.GetAllEmps();
 
             //bind the source to listView control
-            lvEmps.ItemsSource = lstEmps;
+            //lvEmps.ItemsSource = lstEmps;
+
+            //binding data grid
+            dgEmp.ItemsSource = lstEmps;
         }
     }
 }

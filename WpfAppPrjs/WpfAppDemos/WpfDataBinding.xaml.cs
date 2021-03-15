@@ -27,10 +27,14 @@ namespace WpfAppDemos
         private void btnSetBkColor_Click(object sender, RoutedEventArgs e)
         {
             //access the resource from the resource collection
-            var yellowBrush = (SolidColorBrush)Resources["yellowBrush"];
+            //var yellowBrush = (SolidColorBrush)Resources["yellowBrush"];
 
             //set the background color of the label
-            lblData.Background = yellowBrush;
+            //lblData.Background = yellowBrush;
+            string msg = "Hello";
+            Application.Current.Properties["msg"] = msg;//like 
+            DockPanelDemo form = new DockPanelDemo();
+            form.Show();
         }
     }
 }

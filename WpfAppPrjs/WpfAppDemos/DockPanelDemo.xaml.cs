@@ -105,5 +105,11 @@ namespace WpfAppDemos
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            var msg = Application.Current.Properties["msg"].ToString();
+            lblMsg.Content = msg;
+        }
     }
 }

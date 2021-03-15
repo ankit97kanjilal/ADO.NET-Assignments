@@ -8,6 +8,19 @@
         Title="DataTemplateDemo" Height="450" Width="800" Loaded="Window_Loaded">
 
     <Window.Resources>
+        <!--target type is label means only for target-->
+        <Style x:Key="lblStyle" TargetType="Label">
+            <Setter Property="Background" Value="Blue"/>
+            <Setter Property="Foreground" Value="Yellow"/>
+            <Setter Property="FontSize" Value="30"/>            
+        </Style>
+        
+        <!--Style is inherited here-->
+        <Style x:Key="lblExtStyle" TargetType="Label" BasedOn="{StaticResource lblStyle}">
+            <Setter Property="Foreground" Value="Red"/>
+            <!--Child class will over write the parent class property-->
+        </Style>
+
         <!--DataTemplate Resource-->
         <DataTemplate x:Key="empTmplt">
             <StackPanel Orientation="Horizontal">
@@ -37,9 +50,26 @@
         </DataTemplate>
     </Window.Resources>
     
-    <Grid>
+    <StackPanel>
+        <!--Element level resource are used here-->
+        <StackPanel.Resources>
+            <Style x:Key="lblStyle" TargetType="Label">
+                <Setter Property="Background" Value="Red"/>
+                <Setter Property="Foreground" Value="Yellow"/>
+                <Setter Property="FontSize" Value="30"/>
+            </Style>
+        </StackPanel.Resources>
         <!--listview ItemsSource="" ItemTemplate="" this ItemSource will be done by C# code -->
         <!--Template are specified in XAML and source is specified in C#-->
-        <ListView Name="lvEmps" ItemTemplate="{Binding Source={StaticResource empTmplt}}"/>
-    </Grid>
+        <!--<ListView Name="lvEmps" ItemTemplate="{Binding Source={StaticResource empTmplt}}"/>-->
+        <StackPanel>            
+            <Label Content="DataGrid Demo" Style="{Binding Source={StaticResource lblStyle}}"/>
+            <Label Content="DataGrid Demo 2" Style="{Binding Source={StaticResource lblExtStyle}}"/>
+        </StackPanel>        
+        <!--<Button Content="Button 1" Width="300" Height="50"/> --><!--Style="{Binding Source={StaticResource lblStyle}}"-->
+        <DataGrid Name="dgEmp" CanUserAddRows="False" CanUserDeleteRows="False" CanUserSortColumns="True"/>
+        <Label Content="DataGrid Demo" Style="{Binding Source={StaticResource lblStyle}}"/>
+        <!--we dont want to allow the style for outside label-->
+        <!--So need to allow element level resource-->        
+    </StackPanel>
 </Window>

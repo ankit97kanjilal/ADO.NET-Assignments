@@ -2,10 +2,10 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:WpfAppDemos"
-             StartupUri="DataTemplateDemo.xaml">
+             StartupUri="WpfMusicLibraryDataBinding.xaml">
     <Application.Resources>
          <!-- level resources can be declared here...
-            Throughout the Application we can refer to this-->
+            Throughout the Application we can refer to this WpfMusicLibraryDataBinding.xaml -->
         <SolidColorBrush x:Key="redBrush" Color="Red"/>
         <!--it is in application level-->
     </Application.Resources>

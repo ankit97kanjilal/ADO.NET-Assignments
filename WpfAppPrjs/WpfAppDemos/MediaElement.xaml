@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfAppDemos.MediaElement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfAppDemos"
+        mc:Ignorable="d"
+        Title="MediaElement" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="68*"/>
+            <RowDefinition Height="267*"/>
+            <RowDefinition Height="84*"/>
+        </Grid.RowDefinitions>
+        <Button Name="btnSelect" FontSize="20" Content="SELECT" HorizontalAlignment="Left" Height="48" Margin="616,10,0,0" VerticalAlignment="Top" Width="166" Click="btnSelect_Click"/>
+        <Label Name="lblMovie" Content="Select Movie" FontSize="20" HorizontalAlignment="Left" Height="48" Margin="10,10,0,0" VerticalAlignment="Top" Width="124"/>
+        <Button Name="btnStart" FontSize="20" Content="START" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="154" Height="64" RenderTransformOrigin="0.775,0.532" Click="btnStart_Click"/>
+        <Button Name="btnPause" FontSize="20" Content="PAUSE" HorizontalAlignment="Left" Margin="195,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="148" Height="64" Click="btnPause_Click"/>
+        <Button Name="btnResume" FontSize="20" Content="RESUME" HorizontalAlignment="Left" Margin="447,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="152" Height="64" Click="btnResume_Click"/>
+        <Button Name="btnStop" FontSize="20" Content="STOP" HorizontalAlignment="Left" Margin="630,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="152" Height="64" Click="btnStop_Click"/>
+        <MediaElement LoadedBehavior="Manual" Name="media1" HorizontalAlignment="Left" Height="247" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="772"/>
+        <!--<MediaElement LoadedBehavior="Manual"  Name="media1" HorizontalAlignment="Left" Height="279" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="773"/>-->
+        <TextBlock Name="txtFileName" FontSize="20" HorizontalAlignment="Left" Height="34" Margin="164,15,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="435"/>
+    </Grid>
+</Window>
